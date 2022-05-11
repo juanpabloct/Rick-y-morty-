@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Title from "./StyledComponents/H1";
+import Navbar from "./StyledComponents/Navbar";
+import Button from "./StyledComponents/Button";
+import Section from "./StyledComponents/Section";
+import randomNumber from "./funcionalities/randomNumber";
+import { useState } from "react";
+import Character from "./components/Character";
+import Mensaje from "./StyledComponents/Mensaje";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [id, setId] = useState(null);
+  if (id) {
+    return (
+      <>
+        <Navbar>
+          <Title>Rick Y Morty</Title>
+        </Navbar>
+        <Section style={{ marginBottom: "2rem" }}>
+          <Button onClick={() => setId(randomNumber())} style={{}}>
+            Generate Character
+          </Button>
+        </Section>
+        <Character id={id} />
+      </>
+    );
+  } else {
+    return (
+      <>
+        <Navbar>
+          <Title>Rick Y Morty</Title>
+        </Navbar>
+        <Section style={{ marginBottom: "2rem" }}>
+          <Mensaje>Da Click Para Generar un Personaje</Mensaje>
+          <Button onClick={() => setId(randomNumber())} style={{}}>
+            Generate Character
+          </Button>
+        </Section>
+      </>
+    );
+  }
 }
 
 export default App;
