@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/juanpabloct/Rick-y-morty-/static/css/main.073c9b0a.css",
-    "main.js": "/juanpabloct/Rick-y-morty-/static/js/main.9b8470dc.js",
-    "static/js/787.14717858.chunk.js": "/juanpabloct/Rick-y-morty-/static/js/787.14717858.chunk.js",
-    "index.html": "/juanpabloct/Rick-y-morty-/index.html",
-    "main.073c9b0a.css.map": "/juanpabloct/Rick-y-morty-/static/css/main.073c9b0a.css.map",
-    "main.9b8470dc.js.map": "/juanpabloct/Rick-y-morty-/static/js/main.9b8470dc.js.map",
-    "787.14717858.chunk.js.map": "/juanpabloct/Rick-y-morty-/static/js/787.14717858.chunk.js.map"
+    "main.css": "/Rick-y-morty-/static/css/main.073c9b0a.css",
+    "main.js": "/Rick-y-morty-/static/js/main.69128619.js",
+    "static/js/787.14717858.chunk.js": "/Rick-y-morty-/static/js/787.14717858.chunk.js",
+    "index.html": "/Rick-y-morty-/index.html",
+    "main.073c9b0a.css.map": "/Rick-y-morty-/static/css/main.073c9b0a.css.map",
+    "main.69128619.js.map": "/Rick-y-morty-/static/js/main.69128619.js.map",
+    "787.14717858.chunk.js.map": "/Rick-y-morty-/static/js/787.14717858.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.9b8470dc.js"
+    "static/js/main.69128619.js"
   ]
 }
