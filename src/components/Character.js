@@ -1,5 +1,5 @@
 import { useQuery } from "@apollo/client";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import CharacterQuery from "../api/characterQuery";
 import Button from "../StyledComponents/Button";
 import Flex from "../StyledComponents/Flex";
@@ -17,6 +17,7 @@ export default function Character({ id }) {
   });
   const [history, setHistory] = useState([]);
   const [lastInsertedValue, setLastInsertedValue] = useState(0);
+  const CallbackSetLastInsertedValue = useCallback((i) => { setLastInsertedValue(i) }, [id])
   useEffect(() => {
     if (data) {
       setHistory((current) => [...current, data]);
@@ -124,7 +125,7 @@ export default function Character({ id }) {
                   <Button
                     style={{ margin: "auto" }}
                     onClick={() => {
-                      setLastInsertedValue(item);
+                      CallbackSetLastInsertedValue(item);
                     }}
                   >
                     View
