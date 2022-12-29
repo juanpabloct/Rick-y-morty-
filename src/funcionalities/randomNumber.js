@@ -1,5 +1,5 @@
-function randomNumber() {
-  const random = Math.round(Math.random() * 20);
+function randomNumber(number = 20) {
+  const random = Math.round(Math.random() * number);
   return random;
 }
 export default randomNumber;
