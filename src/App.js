@@ -17,7 +17,7 @@ function App() {
           <Title>Rick Y Morty</Title>
         </Navbar>
         <Section style={{ marginBottom: "2rem" }}>
-          <Button onClick={() => setId(randomNumber())} style={{}}>
+          <Button onClick={() => setId(randomNumber(826))} style={{}}>
             Generate Character
           </Button>
         </Section>
@@ -32,7 +32,7 @@ function App() {
         </Navbar>
         <Section style={{ marginBottom: "2rem" }}>
           <Mensaje>Da Click Para Generar un Personaje</Mensaje>
-          <Button onClick={() => setId(randomNumber())} style={{}}>
+          <Button onClick={() => setId(randomNumber(826))} style={{}}>
             Generate Character
           </Button>
         </Section>
